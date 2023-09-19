@@ -3,7 +3,6 @@ import { StatusBar } from "expo-status-bar";
 import {
   FlatList,
   StyleSheet,
-  Text,
   View,
   Alert,
   TouchableWithoutFeedback,
@@ -12,7 +11,6 @@ import {
 import Header from "./components/Header";
 import TodoItem from "./components/TodoItem";
 import AddTodo from "./components/AddTodo";
-import Sandbox from "./components/Sandbox";
 
 export default function App() {
   const [todos, setTodos] = useState([
@@ -38,7 +36,6 @@ export default function App() {
   };
 
   return (
-    // <Sandbox />
     <TouchableWithoutFeedback
       onPress={() => {
         Keyboard.dismiss();
