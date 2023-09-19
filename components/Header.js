@@ -5,8 +5,6 @@ export default function Header() {
   return (
     <View style={styles.header}>
       <Text style={styles.title}>My Todos</Text>
-
-      <StatusBar style="auto" />
     </View>
   );
 }
@@ -16,5 +14,11 @@ const styles = StyleSheet.create({
     height: 80,
     paddingTop: 38,
     backgroundColor: "coral",
+  },
+  title: {
+    textAlign: "center",
+    color: "#fff",
+    fontSize: 20,
+    fontWeight: "bold",
   },
 });
